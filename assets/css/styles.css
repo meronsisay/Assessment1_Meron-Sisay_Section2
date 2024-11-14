@@ -22,6 +22,10 @@ nav ul li a{
     color: rgb(121, 205, 177);
     font-weight: 600;
 }
+nav ul li:hover{
+   background-color: rgb(243, 213, 213);
+   padding: 2px 5px;
+}
 h2{
     margin: 50px 100px;
 }
@@ -40,7 +44,11 @@ h2{
     text-align: center;
     background-color: #fff;
    border-radius: 8px;
-   box-shadow: 0 0 7px rgb(196, 192, 192);
+   box-shadow: 0 0 7px rgb(189, 182, 182);
+}
+.product:hover{
+   
+    box-shadow:  0 0 20px rgb(189, 182, 182);
 }
 .product-list h2{
     margin: 10px;
@@ -54,9 +62,9 @@ h2{
     width: 300px;
 }
 footer{
-    background-color:green;
+    background-color:rgb(3, 113, 3);
     text-align: center;
     color: white;
-    padding: 30px;
+    padding: 40px;
     margin-top: 100px;
 }
