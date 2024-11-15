@@ -6,7 +6,7 @@ body{
     background-color: #f0efe8;
 }
 header{
-    background-color: rgb(213, 243, 213);
+    background-color: #4caf50;
     text-align: center;
     padding: 20px;
 }
@@ -35,8 +35,9 @@ h2{
      font-weight: 600;
 }
 .product-list{
-    width: 990px;
+    width: 75%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -44,6 +45,7 @@ h2{
     text-align: center;
     background-color: #fff;
    border-radius: 8px;
+   margin-bottom: 15px;
    box-shadow: 0 0 7px rgb(189, 182, 182);
 }
 .product:hover{
@@ -54,17 +56,36 @@ h2{
     margin: 10px;
 }
 .product-list img{
-    width: 275px;
+    width: 95%;
     border-radius: 8px;
     padding-top:15px;
 }
 .product-list article p{
-    width: 300px;
+    width: 90%;
+    margin: 15px auto;
 }
 footer{
-    background-color:rgb(3, 113, 3);
+    background-color:#124314;
     text-align: center;
     color: white;
     padding: 40px;
     margin-top: 100px;
+}
+@media (min-width: 768px) {
+    
+    .product-list {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 710px; 
+         gap: 3%;
+    }
+   .product{
+     width: 35%;
+   }
+}
+@media (min-width: 1024px) {
+    .product-list {
+        width: 990px;
+        /* justify-content: space-between; */
+    }
 }
